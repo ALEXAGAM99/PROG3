@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Layout 6</title>
+    <style>
+        html, body { height: 100%; margin: 0; display: flex;
+            flex-direction: column;
+        }
+        .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        header, footer {
+            flex: 0 0 10%;
+            text-align: center;
+            border: 1px solid #dee2e6;
+            padding: 10px;
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+        }
+        .left-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        nav, aside {
+            flex: 1;
+            border: 1px solid #dee2e6;
+            text-align: center;
+            padding: 10px;
+        }
+        .right-section {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+        }
+        article {
+            flex: 2;
+            border: 1px solid #dee2e6;
+            text-align: center;
+            padding: 10px;
+        }
+        .div-section {
+            display: flex;
+            flex: 1;
+        }
+        .div-section div {
+            flex: 1;
+            border: 1px solid #dee2e6;
+            text-align: center;
+            padding: 10px;
+        }
+        a { position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">Retornar</a> Header
+        </header>
+
+        <div class="main-content">
+            <div class="left-section">
+                <nav>Nav</nav>
+                <aside>Aside</aside>
+            </div>
+            <div class="right-section">
+                <article>Article</article>
+                <div class="div-section">
+                    <div>Div</div>
+                    <div>Div</div>
+                    <div>Div</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
