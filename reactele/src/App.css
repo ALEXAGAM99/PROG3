@@ -1,0 +1,8 @@
+body{
+  background-color: rgb(193, 193, 236);
+}
+
+select,::picker(select) {
+			appearance: base-select;
+		}
+		option{background-color: rgb(33, 229, 180);}
